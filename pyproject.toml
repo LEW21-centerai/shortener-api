@@ -1,0 +1,30 @@
+[project]
+name = "shortener-api"
+version = "0.1.0"
+authors = [
+    {name = "Linus Lewandowski", email = "linus@lew21.net"},
+]
+description = "Backend for URL shortener service"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "django>=5.0.3",
+    "djangorestframework>=3.14.0",
+    "dj12>=0.3.0",
+    "django-debug-toolbar>=4.3.0",
+    "whitenoise>=6.6.0",
+    "gunicorn>=21.2.0",
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/LEW21-centerai/shortener-api"
+Issues = "https://github.com/LEW21-centerai/shortener-api/issues"
+
+[tool.setuptools]
+packages = ["links", "app"]
